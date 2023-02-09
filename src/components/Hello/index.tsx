@@ -34,7 +34,7 @@ const Hello = () => {
         <a
           style={{ color: '#F24C4C' }}
           target='_blank'
-          href='https://github.com/igdev116/vite-react-ts-eslint-prettier'
+          href='https://github.com/NTienAnh/DATN_FE_2'
           rel='noreferrer'
         >
           Github

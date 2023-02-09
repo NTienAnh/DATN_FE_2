@@ -1,3 +1,4 @@
+Technology: Vite ReactQuery MUI TS
 yarn create vite
 create name + js/ts 3. build with yarn: yarn install
 run basic project: yarn dev
