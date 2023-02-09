@@ -1,14 +1,12 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 
-const Test = () => {
-  const { isLoading, error, data, isFetching } = useQuery('repoData', () =>
+export default function Test(): JSX.Element {
+  const { isLoading, data, isFetching } = useQuery('repoData', () =>
     axios.get('https://api.github.com/repos/tannerlinsley/react-query').then((res) => res.data),
   );
 
-  if (isLoading) return 'Loading...';
-
-  if (error) return ('An error has occurred: ' + error) as any;
+  if (isLoading) return <span>Loading...</span>;
 
   return (
     <div>
@@ -19,6 +17,4 @@ const Test = () => {
       <div>{isFetching ? 'Updating...' : ''}</div>
     </div>
   );
-};
-
-export default Test;
+}
