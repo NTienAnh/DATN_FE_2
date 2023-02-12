@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Hello from '~/components/Hello';
-import Test from './components/Test';
 
 function App() {
   const queryClient = new QueryClient();

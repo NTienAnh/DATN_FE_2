@@ -1,6 +1,5 @@
-import { Button } from '@mui/material';
 import logo from '~/logo.svg';
-import Test from '../Test';
+import MuiTypography from '../DataDisplay/MuiTypography';
 
 const Hello = () => {
   return (
@@ -15,8 +14,17 @@ const Hello = () => {
       }}
     >
       <img src={logo} alt='Logo' style={{ height: '150px' }} />
-      <Test />
-      <Button>sss</Button>
+      <div
+        style={{
+          gap: '20px',
+          display: 'flex',
+          justifyItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <MuiTypography name='MUI' />
+        <MuiTypography name='Element 2' />
+      </div>
     </div>
   );
 };
