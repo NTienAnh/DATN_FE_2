@@ -1,4 +1,3 @@
-import logo from '~/logo.svg';
 import MuiTypography from '../DataDisplay/MuiTypography';
 
 const Hello = () => {
@@ -13,7 +12,6 @@ const Hello = () => {
         paddingTop: '50px',
       }}
     >
-      <img src={logo} alt='Logo' style={{ height: '150px' }} />
       <div
         style={{
           gap: '20px',
